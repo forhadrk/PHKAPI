@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\PHKAPI\bin\Release\net6.0\publish\PHKAPI.exe
+C:\Users\User\source\repos\PHKAPI\bin\Release\net6.0\publish\appsettings.Development.json
+C:\Users\User\source\repos\PHKAPI\bin\Release\net6.0\publish\appsettings.json
+C:\Users\User\source\repos\PHKAPI\bin\Release\net6.0\publish\PHKAPI.dll
+C:\Users\User\source\repos\PHKAPI\bin\Release\net6.0\publish\PHKAPI.deps.json
+C:\Users\User\source\repos\PHKAPI\bin\Release\net6.0\publish\PHKAPI.runtimeconfig.json
+C:\Users\User\source\repos\PHKAPI\bin\Release\net6.0\publish\PHKAPI.pdb
+C:\Users\User\source\repos\PHKAPI\bin\Release\net6.0\publish\Microsoft.OpenApi.dll
+C:\Users\User\source\repos\PHKAPI\bin\Release\net6.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User\source\repos\PHKAPI\bin\Release\net6.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User\source\repos\PHKAPI\bin\Release\net6.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
