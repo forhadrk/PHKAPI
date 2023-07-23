@@ -19,7 +19,13 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: PMSAllowOrigin,
         builder =>
         {
-            builder.WithOrigins("http://localhost:57936") // Update with your Angular application's origin
+            builder.WithOrigins("http://localhost:4200",
+                "https://api.perthhousekeeping.com.au",
+                "https://perthhousekeeping.com.au",
+                "http://api.perthhousekeeping.com.au",
+                "http://perthhousekeeping.services",
+                "http://perthhousekeeping.com.au"
+                ) // Update with your Angular application's origin
                    .AllowAnyMethod()
                    .AllowAnyHeader()
                    .AllowCredentials();

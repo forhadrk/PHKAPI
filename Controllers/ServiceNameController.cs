@@ -14,6 +14,7 @@ namespace PHKAPI.Controllers
         private readonly IDapper _dapper;
         public readonly DatabaseContext _dbContext;
         const string _spName = "SP_SET_SERVICES";
+        const string _spHome = "SP_GET_HOME_DETAILS";
 
         public ServiceNameController(DatabaseContext dbContext, IDapper dapper)
         {
@@ -77,6 +78,31 @@ namespace PHKAPI.Controllers
             {
                 return BadRequest();
             }
+        }
+
+        [HttpGet("GetAllActiveServiceNames")]
+        public async Task<List<ServiceNameDBModel>> GetAllActiveServiceNames()
+        {
+            var dbparams = new DynamicParameters();
+            dbparams.Add("QryOption", 1, DbType.Int32);
+            return await Task.FromResult(_dapper.GetAll<ServiceNameDBModel>(_spHome, dbparams, commandType: CommandType.StoredProcedure));
+        }
+
+        [HttpGet("GetAllActiveServiceCategory")]
+        public async Task<List<ServicePriceDBModel>> GetAllActiveServiceCategory()
+        {
+            var dbparams = new DynamicParameters();
+            dbparams.Add("QryOption", 2, DbType.Int32);
+            return await Task.FromResult(_dapper.GetAll<ServicePriceDBModel>(_spHome, dbparams, commandType: CommandType.StoredProcedure));
+        }
+
+        [HttpPost("GetServiceCategoryWiseList")]
+        public async Task<List<ServiceDetailsDBModel>> GetServiceCategoryWiseList(ServicePriceDBModel _dbmodel)
+        {
+            var dbparams = new DynamicParameters();
+            dbparams.Add("QryOption", 3, DbType.Int32);
+            dbparams.Add("ServiceListID", _dbmodel.ServiceListID, DbType.Int32);
+            return await Task.FromResult(_dapper.GetAll<ServiceDetailsDBModel>(_spHome, dbparams, commandType: CommandType.StoredProcedure));
         }
     }
 }
