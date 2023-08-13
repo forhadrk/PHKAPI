@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PHKAPI;
+using PHKAPI.JwtTokens;
 using PMS.API.DBContext;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,6 +33,7 @@ builder.Services.AddCors(options =>
         });
 });
 
+builder.Services.AddSingleton<IJWTManagerRepository, JWTManagerRepository>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
