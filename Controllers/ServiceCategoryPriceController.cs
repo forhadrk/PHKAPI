@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -42,8 +43,7 @@ namespace PHKAPI.Controllers
             {
                 return BadRequest();
             }
-        }
-
+        }        
         [HttpGet("GetAllData")]
         public async Task<List<ServiceCategoryPriceDBModel>> GetAllData()
         {

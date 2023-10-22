@@ -8,6 +8,7 @@ C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\PHKAPI.pdb
 C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\Azure.Core.dll
 C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\Azure.Identity.dll
 C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\Dapper.dll
+C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
 C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
@@ -63,3 +64,5 @@ C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib
 C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\User\source\repos\PHKAPI\obj\Release\net6.0\PubTmp\Out\SimplifySDK.dll

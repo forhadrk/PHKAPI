@@ -1,4 +1,6 @@
 ﻿using Dapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PHKAPI.Models;
@@ -45,6 +47,8 @@ namespace PHKAPI.Controllers
             }
         }
 
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize]
         [HttpGet("GetAllData")]
         public async Task<List<ServiceNameDBModel>> GetAllData()
         {

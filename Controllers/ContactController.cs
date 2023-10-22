@@ -81,5 +81,24 @@ namespace PHKAPI.Controllers
                 return BadRequest();
             }
         }
+        [HttpPost("SaveCommentDate")]
+        public async Task<IActionResult> SaveCommentDate(ContactDBModel _dbModel)
+        {
+            try
+            {
+                var dbparams = new DynamicParameters();
+                dbparams.Add("QryOption", 6, DbType.Int32);
+                dbparams.Add("Name", _dbModel.Name, DbType.String);
+                dbparams.Add("Message", _dbModel.Message, DbType.String);
+
+                await Task.FromResult(_dapper.Save<ContactDBModel>(_spName, dbparams, commandType: CommandType.StoredProcedure));
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+        }
     }
 }

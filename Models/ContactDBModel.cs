@@ -10,5 +10,6 @@
         public string? City { get; set; }
         public string? Subject { get; set; }
         public string? Message { get; set; }
+        public string? Name { get; set; }
     }
 }
